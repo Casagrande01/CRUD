@@ -6,7 +6,6 @@ router.get('/', vendaController.getAllVendas);
 router.get('/search', (req, res) => {
     res.status(501).send('Search feature not implemented yet');
 });
-
 router.get('/new', vendaController.renderCreateForm);
 router.post('/', vendaController.createVenda);
 router.get('/:id', vendaController.getVendaById);
